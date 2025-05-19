@@ -1,0 +1,23 @@
+[project]
+name = "weather-agent"
+version = "1.0.0"
+description = "An agent that can answer questions about the weather using Llamaindex and MCP"
+readme = "README.md"
+requires-python = ">=3.10.5"
+dependencies = [
+    "llama-index>=0.12.36",
+    "llama-index-llms-ollama>=0.5.4",
+    "llama-index-tools-mcp>=0.1.3",
+    "mcp[cli]>=1.9.0",
+    "python-dotenv>=1.1.0",
+    "streamlit>=1.45.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.2.0",
+]
