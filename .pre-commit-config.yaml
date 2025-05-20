@@ -7,6 +7,9 @@ repos:
       - id: ruff
         args: [ --fix ]
       # Run the formatter.
+      - id: ruff
+        name: sort imports with ruff
+        args: [--select, I, --fix]
       - id: ruff-format
   
   

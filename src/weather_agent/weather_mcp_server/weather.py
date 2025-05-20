@@ -76,5 +76,9 @@ async def get_forecast(latitude: float, longitude: float) -> str:
     return "\n--\n".join(forecasts)
 
 
+def main():
+    mcp.run(transport="sse")
+
+
 if __name__ == "__main__":
     mcp.run(transport="sse")
