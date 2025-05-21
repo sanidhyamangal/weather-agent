@@ -1,6 +1,6 @@
 [project]
 name = "weather-agent"
-version = "1.0.0"
+version = "1.0.1"
 description = "An agent that can answer questions about the weather using Llamaindex and MCP"
 readme = "README.md"
 requires-python = ">=3.10.5"
@@ -18,7 +18,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project.scripts]
-weather-mcp-server = "weather_agent.weather_mcp_server.weather:main"
+weather-mcp-server = "weather_agent.weather_mcp_server:main"
 
 [dependency-groups]
 dev = [
